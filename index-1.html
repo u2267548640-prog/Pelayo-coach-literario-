@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pelayo Coach Literario</title>
+  <meta name="description" content="Clases de poesía y literatura y acompañamiento de proyectos literarios con Pelayo.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      color: #33261d;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(120,80,40,.08), transparent 30%),
+        radial-gradient(circle at 80% 70%, rgba(120,80,40,.07), transparent 28%),
+        #efe2c8;
+      line-height: 1.7;
+    }
+    body::before {
+      content: "";
+      position: fixed; inset: 0; pointer-events: none; opacity: .18;
+      background-image: repeating-linear-gradient(0deg, rgba(70,45,25,.04) 0, rgba(70,45,25,.04) 1px, transparent 1px, transparent 4px);
+      z-index: -1;
+    }
+    nav {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(53, 38, 27, .96);
+      padding: 15px 6%;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .brand { color: #f5e9d0; font-size: 1.25rem; font-weight: bold; }
+    nav a { color: #f5e9d0; text-decoration: none; margin-left: 20px; font-size: .95rem; }
+    nav a:hover { text-decoration: underline; }
+    .hero {
+      min-height: 78vh; display: grid; place-items: center; text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(rgba(239,226,200,.72), rgba(239,226,200,.92));
+    }
+    .hero-inner { max-width: 850px; }
+    .eyebrow { letter-spacing: 3px; text-transform: uppercase; font-size: .85rem; }
+    h1 { font-size: clamp(3rem, 9vw, 6.5rem); line-height: 1; margin: 18px 0; }
+    .hero p { font-size: clamp(1.15rem, 2.5vw, 1.45rem); max-width: 680px; margin: auto; }
+    .button {
+      display: inline-block; margin-top: 30px; padding: 13px 25px;
+      background: #604632; color: #fff8e9; border-radius: 4px;
+      text-decoration: none; font-weight: bold;
+    }
+    .button:hover { background: #453226; }
+    section { padding: 75px 7%; max-width: 1150px; margin: auto; }
+    .section-title { font-size: 2.4rem; margin-bottom: 15px; }
+    .intro { max-width: 750px; font-size: 1.1rem; }
+    .cards {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 22px; margin-top: 35px;
+    }
+    .card {
+      background: rgba(255,248,233,.65); border: 1px solid rgba(96,70,50,.2);
+      padding: 30px; border-radius: 8px;
+      box-shadow: 0 8px 25px rgba(60,40,20,.08);
+    }
+    .card h3 { font-size: 1.35rem; margin-bottom: 10px; }
+    .icon { font-size: 2rem; margin-bottom: 10px; }
+    .price {
+      text-align: center; background: #604632; color: #fff8e9;
+      max-width: 650px; padding: 45px 25px; margin: 20px auto 0;
+      border-radius: 8px; box-shadow: 0 12px 30px rgba(50,30,15,.18);
+    }
+    .price strong { display: block; font-size: 3.5rem; line-height: 1.1; }
+    .contact { text-align: center; }
+    .phone { font-size: 1.5rem; font-weight: bold; margin: 15px 0; }
+    footer {
+      text-align: center; padding: 30px 20px; background: #35261b; color: #eadcc2;
+      font-size: .9rem;
+    }
+    @media (max-width: 750px) {
+      nav { flex-direction: column; gap: 8px; }
+      nav a { margin: 0 8px; }
+      .cards { grid-template-columns: 1fr; }
+      section { padding: 55px 6%; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="brand">Pelayo Coach Literario</div>
+    <div>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Poesía · Literatura · Escritura</div>
+      <h1>Pelayo<br>Coach Literario</h1>
+      <p>Un espacio para descubrir tu voz, desarrollar tus ideas y dar forma a tus proyectos literarios.</p>
+      <a class="button" href="#contacto">Hablemos de tu proyecto</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="sobre-mi">
+      <h2 class="section-title">Sobre mí</h2>
+      <p class="intro">
+        Soy Pelayo, escritor y apasionado por la poesía y la literatura. 
+        Cuento con <strong>3 años de experiencia en poesía</strong> y quiero ayudarte
+        a desarrollar tus ideas y proyectos literarios con acompañamiento cercano y práctico.
+      </p>
+    </section>
+
+    <section id="servicios">
+      <h2 class="section-title">Servicios</h2>
+      <p class="intro">Sesiones pensadas tanto para quienes empiezan a escribir como para quienes ya tienen un proyecto entre manos.</p>
+      <div class="cards">
+        <article class="card">
+          <div class="icon">✍️</div>
+          <h3>Clases de poesía</h3>
+          <p>Trabajaremos escritura poética, recursos literarios, voz propia y desarrollo de poemas.</p>
+        </article>
+        <article class="card">
+          <div class="icon">📖</div>
+          <h3>Literatura en general</h3>
+          <p>Acompañamiento y orientación para aprender, analizar y disfrutar mejor de la literatura.</p>
+        </article>
+        <article class="card">
+          <div class="icon">📝</div>
+          <h3>Proyectos literarios</h3>
+          <p>Te acompaño durante el desarrollo de tu poemario, manuscrito o proyecto de escritura.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="tarifa">
+      <h2 class="section-title" style="text-align:center;">Tarifa</h2>
+      <div class="price">
+        <strong>10 €</strong>
+        <span>por hora</span>
+        <p style="margin-top:15px;">Una tarifa inicial para comenzar a trabajar juntos.</p>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact">
+      <h2 class="section-title">Contacto</h2>
+      <p class="intro" style="margin:auto;">¿Tienes una idea, un poema o un proyecto literario? Escríbeme y hablamos.</p>
+      <div class="phone">📞 +34 670 748 023</div>
+      <a class="button" href="https://wa.me/34670748023" target="_blank" rel="noopener">Contactar por WhatsApp</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Pelayo Coach Literario · Poesía y literatura
+  </footer>
+
+</body>
+</html>
