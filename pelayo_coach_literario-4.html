@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pelayo | Coach Literario</title>
+  <meta name="description" content="Pelayo — acompañamiento y orientación para escritores y proyectos literarios.">
+  <style>
+    :root{
+      --bg:#f7f3ed;
+      --paper:#fffdf9;
+      --ink:#25221f;
+      --muted:#746d65;
+      --line:#ddd4c9;
+      --accent:#6e5140;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(110,81,64,.045) 0 1px, transparent 1.5px),
+        radial-gradient(circle at 80% 70%, rgba(110,81,64,.035) 0 1px, transparent 1.5px),
+        linear-gradient(135deg, #f8f2e8 0%, #eee5d8 100%);
+      background-size: 18px 18px, 23px 23px, auto;
+      color:var(--ink); line-height:1.7;
+    }
+    nav{
+      position:sticky;top:0;z-index:10;
+      background:rgba(247,243,237,.94);backdrop-filter:blur(8px);
+      border-bottom:1px solid var(--line);
+      display:flex;justify-content:space-between;align-items:center;
+      padding:18px 7%;
+    }
+    .brand{font-size:1.15rem;font-weight:bold;letter-spacing:.04em}
+    nav a{color:var(--ink);text-decoration:none;margin-left:22px;font-size:.95rem}
+    .hero{
+      min-height:82vh;display:grid;place-items:center;text-align:center;
+      padding:80px 7%;
+      background:
+      linear-gradient(rgba(255,253,249,.88), rgba(247,241,231,.9)),
+      repeating-linear-gradient(0deg, rgba(110,81,64,.025) 0 1px, transparent 1px 5px);
+    }
+    .hero small{color:var(--accent);letter-spacing:.18em;text-transform:uppercase}
+    h1{font-size:clamp(3rem,8vw,6.5rem);font-weight:normal;line-height:1.02;margin:22px 0}
+    .hero p{max-width:650px;margin:0 auto;color:var(--muted);font-size:1.15rem}
+    .button{
+      display:inline-block;margin-top:32px;padding:13px 25px;
+      border:1px solid var(--ink);color:var(--paper);background:var(--ink);
+      text-decoration:none;border-radius:2px;
+    }
+    section{max-width:1050px;margin:auto;padding:90px 7%}
+    .eyebrow{color:var(--accent);text-transform:uppercase;letter-spacing:.16em;font-size:.8rem}
+    h2{font-size:2.5rem;font-weight:normal;margin:10px 0 30px}
+    .about{display:grid;grid-template-columns:1fr 1.4fr;gap:55px}
+    .about p{color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{
+      background:var(--paper);border:1px solid var(--line);padding:30px;
+      min-height:220px;
+    }
+    .card h3{font-size:1.25rem;margin-bottom:12px}
+    .card p{color:var(--muted);font-size:.96rem}
+    .method{background:var(--ink);color:var(--paper);max-width:none}
+    .method-inner{max-width:1050px;margin:auto;padding:90px 7%}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:35px}
+    .step span{font-size:2rem;color:#cbb9a9}
+    .step p{color:#d8d0c8}
+    .contact{
+      text-align:center;background:var(--paper);max-width:none;
+    }
+    footer{text-align:center;padding:28px;color:var(--muted);font-size:.85rem}
+    @media(max-width:750px){
+      nav{padding:15px 5%} nav a{margin-left:10px;font-size:.82rem}
+      .about,.cards,.steps{grid-template-columns:1fr}
+      section{padding:65px 7%}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="brand">PELAYO</div>
+    <div>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#metodo">Método</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <small>Coach literario · Escritura · Proyectos</small>
+      <h1>Convierte una idea<br>en una historia.</h1>
+      <p>
+        Un espacio para escritores que quieren ordenar sus ideas,
+        desarrollar sus proyectos y avanzar con una mirada literaria.
+      </p>
+      <a class="button" href="#contacto">Conocer el proyecto</a>
+    </div>
+  </header>
+
+  <section id="sobre-mi">
+    <div class="about">
+      <div>
+        <div class="eyebrow">01 · Sobre mí</div>
+        <h2>La literatura también se acompaña.</h2>
+      </div>
+      <div>
+        <p>
+          Soy Pelayo, escritor y apasionado por el mundo literario.
+          Este proyecto nace con una idea sencilla: acompañar a quienes
+          tienen una historia, un poemario o un proyecto entre manos y
+          necesitan una dirección para desarrollarlo.
+        </p>
+        <br>
+        <p>
+          Mi objetivo es crear un espacio cercano, claro y creativo donde
+          cada escritor pueda entender mejor su propio proyecto.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios">
+    <div class="eyebrow">02 · Servicios</div>
+    <h2>¿En qué puedo ayudarte?</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>Clases de poesía</h3>
+        <p>Acompañamiento para descubrir recursos poéticos, trabajar la expresión y desarrollar una voz propia.</p>
+      </article>
+      <article class="card">
+        <h3>Literatura en general</h3>
+        <p>Apoyo para comprender géneros, recursos literarios, lectura, escritura y análisis de textos.</p>
+      </article>
+      <article class="card">
+        <h3>Proyectos literarios</h3>
+        <p>Ayuda para ordenar ideas, desarrollar poemarios y otros proyectos y establecer próximos pasos.</p>
+      </article>
+    </div>
+
+    <div style="margin-top:22px;background:var(--paper);border:1px solid var(--line);padding:24px 30px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap">
+      <div>
+        <div class="eyebrow">Tarifa inicial</div>
+        <h3 style="font-size:1.35rem;margin-top:5px">Acompañamiento literario</h3>
+        <p style="color:var(--muted);margin-top:4px">Sesiones individuales para trabajar tu proyecto o profundizar en poesía y literatura.</p>
+      </div>
+      <div style="font-size:2rem;white-space:nowrap">10 €<span style="font-size:1rem;color:var(--muted)"> / hora</span></div>
+    </div>
+  </section>
+
+  <div class="method" id="metodo">
+    <div class="method-inner">
+      <div class="eyebrow">03 · Método</div>
+      <h2>Una forma de trabajar contigo.</h2>
+      <div class="steps">
+        <div class="step">
+          <span>01</span>
+          <h3>Escuchar</h3>
+          <p>Entender tu idea, tus objetivos y el punto en el que se encuentra tu proyecto.</p>
+        </div>
+        <div class="step">
+          <span>02</span>
+          <h3>Ordenar</h3>
+          <p>Dar estructura a las ideas y detectar las prioridades que necesitan atención.</p>
+        </div>
+        <div class="step">
+          <span>03</span>
+          <h3>Avanzar</h3>
+          <p>Convertir esa dirección en próximos pasos concretos y realistas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="contacto" class="contact">
+    <div class="eyebrow">04 · Contacto</div>
+    <h2>Hablemos de literatura.</h2>
+    <p style="max-width:600px;margin:auto;color:var(--muted)">
+      Si tienes un proyecto literario y quieres conocer mejor este proyecto,
+      puedes ponerte en contacto.
+    </p>
+    <a class="button" href="tel:+34670748023">Llamar: +34 670 748 023</a>
+    <p style="margin-top:18px;color:var(--muted);font-size:.95rem">
+      Teléfono de contacto: <a href="tel:+34670748023" style="color:var(--ink)">+34 670 748 023</a>
+    </p>
+  </section>
+
+  <footer>
+    © 2026 Pelayo · Proyecto de coach literario
+  </footer>
+</body>
+</html>
